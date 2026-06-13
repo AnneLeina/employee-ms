@@ -26,6 +26,7 @@ function App() {
  <BrowserRouter>
  <Routes>
     <Route path="/forgot-password" element={<ForgotPassword/>}></Route>
+   <Route path="/" element={<Start/>} />
   <Route path="reset_password/:token" element={<ResetPassword />}></Route>
   <Route path="/employee-dashboard" element={<EmployeeDashboard/>}></Route>
   <Route path="/employeelogin" element={<EmployeeLogin/>}></Route>
