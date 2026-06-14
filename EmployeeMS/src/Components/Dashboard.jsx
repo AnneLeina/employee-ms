@@ -9,7 +9,7 @@ const Dashboard = () => {
     axios.defaults.withCredentials = true;
 
     useEffect(() => {
-        axios.get('http:// https://false-unshaved-lilac.ngrok-free.dev/auth/dashboard-stats')
+        axios.get('https://false-unshaved-lilac.ngrok-free.dev/auth/dashboard-stats')
             .then(res => {
                 if (res.data.Status) {
                     const stats = res.data.Result;
@@ -19,7 +19,7 @@ const Dashboard = () => {
     }, []);
 
     const handleLogout = () => {
-        axios.get('http:// https://false-unshaved-lilac.ngrok-free.dev/auth/logout')
+        axios.get('https://false-unshaved-lilac.ngrok-free.dev/auth/logout')
             .then(res => {
                 if (res.data.Status) {
                     localStorage.removeItem("valid");

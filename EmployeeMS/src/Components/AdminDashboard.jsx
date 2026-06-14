@@ -8,7 +8,7 @@ const AdminDashboard = () => {
     totalCategories: 0,
     totalSalary: 0,
     pendingLeaves: 0
-  })
+  }) 
   
 
   useEffect(() => {

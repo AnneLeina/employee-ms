@@ -1,5 +1,4 @@
 import axios from 'axios'
-
 export const isDemoMode=!window.location.hostname.includes("localhost");
 
 const API= axios.create({

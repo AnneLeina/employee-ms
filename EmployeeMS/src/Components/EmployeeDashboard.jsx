@@ -32,7 +32,7 @@ const EmployeeDashboard = () => {
   }, [])
 
   const handleLogout = () => {
-    axios.get('http:// https://false-unshaved-lilac.ngrok-free.dev/employee/logout', { withCredentials: true })
+    axios.get('https://false-unshaved-lilac.ngrok-free.dev/employee/logout', { withCredentials: true })
       .then(() => navigate('/start'))
   }
 
