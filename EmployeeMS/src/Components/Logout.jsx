@@ -6,7 +6,7 @@ const Logout = () => {
   const navigate = useNavigate()
 
   useEffect(() => {
-    axios.get("http://localhost:5000/auth/logout", { withCredentials: true })
+    axios.get("http:// https://false-unshaved-lilac.ngrok-free.dev/auth/logout", { withCredentials: true })
       .then(r => {
         if (r.data.Status) navigate("/adminlogin")
       })

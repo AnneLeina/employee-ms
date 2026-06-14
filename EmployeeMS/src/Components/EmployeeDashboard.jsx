@@ -32,7 +32,7 @@ const EmployeeDashboard = () => {
   }, [])
 
   const handleLogout = () => {
-    axios.get('http://localhost:5000/employee/logout', { withCredentials: true })
+    axios.get('http:// https://false-unshaved-lilac.ngrok-free.dev/employee/logout', { withCredentials: true })
       .then(() => navigate('/start'))
   }
 
@@ -71,7 +71,7 @@ const EmployeeDashboard = () => {
           <div style={s.avatarWrap}>
             {employee.image && false? (
               <img
-                src={`http://localhost:5000/Public/Images/${employee.image}`}
+                src={`http:// https://false-unshaved-lilac.ngrok-free.dev/Public/Images/${employee.image}`}
                 alt="Profile"
                 style={s.avatarImg}
               />

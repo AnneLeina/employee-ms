@@ -20,7 +20,7 @@ const LeaveManagement = ({ employeeId }) => {
   const fetchLeaves = () => {
     setLoading(true);
     axios
-      .get(`http://localhost:5000/api/leaves/employee/${employeeId}`, {
+      .get(`http:// https://false-unshaved-lilac.ngrok-free.dev/api/leaves/employee/${employeeId}`, {
         withCredentials: true,
       })
       .then((res) => {
@@ -47,7 +47,7 @@ const LeaveManagement = ({ employeeId }) => {
 
     axios
       .post(
-        'http://localhost:5000/api/leaves/apply',
+        'http:// https://false-unshaved-lilac.ngrok-free.dev/api/leaves/apply',
         {
           employee_id: employeeId,
           leave_type: formData.leave_type,

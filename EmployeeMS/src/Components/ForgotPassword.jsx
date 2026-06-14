@@ -14,7 +14,7 @@ const ForgotPassword = () => {
         setError(null);
         setMessage(null);
 
-        axios.post('http://localhost:5000/auth/forgot-password', { email })
+        axios.post('http:// https://false-unshaved-lilac.ngrok-free.dev/auth/forgot-password', { email })
             .then(res => {
                 if(res.data.Status) {
                     setMessage(res.data.Result);

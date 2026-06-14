@@ -1,6 +1,6 @@
 import './App.css'
 import "bootstrap/dist/css/bootstrap.min.css"
-import Login from "./Components/Login.jsx"
+import Login from "./Components/Login"
 import {BrowserRouter, Routes, Route} from "react-router-dom"
 import Dashboard from "./Components/Dashboard";
 import Home from './Components/Home';
@@ -14,9 +14,9 @@ import Logout from './Components/Logout';
 import Start from './Components/Start';
 import EmployeeLogin from './Components/EmployeeLogin';
 import EmployeeDashboard from './Components/EmployeeDashboard';
-import ForgotPassword from "./Components/ForgotPassword.jsx";
-import ResetPassword from "./Components/ResetPassword.jsx";
-import AdminDashboard from './Components/AdminDashboard.jsx';
+import ForgotPassword from "./Components/ForgotPassword.";
+import ResetPassword from "./Components/ResetPassword";
+import AdminDashboard from './Components/AdminDashboard';
 
 
 function App() {
