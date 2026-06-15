@@ -15,7 +15,7 @@ const Profile = () => {
         setMessage('');
         setError('');
 
-        axios.put('http:// https://false-unshaved-lilac.ngrok-free.dev/auth/admin-profile/update', {
+        axios.put('https://false-unshaved-lilac.ngrok-free.dev/auth/admin-profile/update', {
             name: admin.name,
             email: admin.email,
             oldEmail: oldEmail

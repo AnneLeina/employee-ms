@@ -18,7 +18,7 @@ const ResetPassword = () => {
             return;
         }
 
-        axios.post(`http:// https://false-unshaved-lilac.ngrok-free.dev/auth/reset-password/${token}`, { password })
+        axios.post(` https://false-unshaved-lilac.ngrok-free.dev/auth/reset-password/${token}`, { password })
             .then(res => {
                 if(res.data.Status) {
                     alert("Password updated successfully! Redirecting to login...");

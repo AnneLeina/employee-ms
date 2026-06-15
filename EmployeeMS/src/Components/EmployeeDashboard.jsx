@@ -71,7 +71,7 @@ const EmployeeDashboard = () => {
           <div style={s.avatarWrap}>
             {employee.image && false? (
               <img
-                src={`http:// https://false-unshaved-lilac.ngrok-free.dev/Public/Images/${employee.image}`}
+                src={`https://false-unshaved-lilac.ngrok-free.dev/Public/Images/${employee.image}`}
                 alt="Profile"
                 style={s.avatarImg}
               />

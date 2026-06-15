@@ -21,7 +21,7 @@ const EditEmployee = () => {
       const navigate= useNavigate()
       
         useEffect(()=> {
-      axios.get("http:// https://false-unshaved-lilac.ngrok-free.dev/auth/category")
+      axios.get("https://false-unshaved-lilac.ngrok-free.dev/auth/category")
       .then(result => {
         if (result.data.Status){
             setCategories(result.data.Result);
@@ -31,7 +31,7 @@ const EditEmployee = () => {
 
 
       }).catch(err => console.log(err))
-      axios.get("http:// https://false-unshaved-lilac.ngrok-free.dev/auth/employee/"+id)
+      axios.get(" https://false-unshaved-lilac.ngrok-free.dev/auth/employee/"+id)
       .then(result => {
         setEmployee({
             ...employee,
@@ -47,7 +47,7 @@ const EditEmployee = () => {
 
      const handleSubmit=(e)=> {
             e.preventDefault();
-            axios.put("http:// https://false-unshaved-lilac.ngrok-free.dev/auth/edit_employee/"+id, employee)
+            axios.put(" https://false-unshaved-lilac.ngrok-free.dev/auth/edit_employee/"+id, employee)
             .then(result => {
                if (result.data.Status){
                 navigate("/dashboard/employee")

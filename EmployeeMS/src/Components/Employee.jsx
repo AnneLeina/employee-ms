@@ -15,7 +15,7 @@ const Employee = () => {
                 {id:1, name:"Ang Kim", email:"angkim@gmail.com", adress:"Mombasa", salary: 18000, category:"Design"},
             ])
         }
-        API.get("http:// https://false-unshaved-lilac.ngrok-free.dev/auth/employee")
+        API.get(" https://false-unshaved-lilac.ngrok-free.dev/auth/employee")
             .then(result => {
                 if (result.data.Status) {
                     setEmployee(result.data.Result);
@@ -26,7 +26,7 @@ const Employee = () => {
             }).catch(err => console.log(err))
     }, [])
     const handleDelete=(id) => {
-        axios.delete("http:// https://false-unshaved-lilac.ngrok-free.dev/auth/delete_employee/"+id)
+        axios.delete("https://false-unshaved-lilac.ngrok-free.dev/auth/delete_employee/"+id)
         .then(result => {
             if(result.data.Status) {
               window.location.reload()
@@ -63,7 +63,7 @@ const Employee = () => {
                                 employee.map((e, index) => (
                                     <tr key={index}>
                                         <td>{e.name}</td>
-                                        <td><img src={"http:// https://false-unshaved-lilac.ngrok-free.dev/Images/" + e.image} className="employee_image" /></td>
+                                        <td><img src={"https://false-unshaved-lilac.ngrok-free.dev/Images/" + e.image} className="employee_image" /></td>
                                         <td>{e.email}</td>
                                         <td>{e.address}</td>
                                         <td>{e.salary}</td>

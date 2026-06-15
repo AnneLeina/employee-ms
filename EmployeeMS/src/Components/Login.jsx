@@ -14,7 +14,7 @@ const Login = () => {
     const handleSubmit = (event) => {
         event.preventDefault()
         console.log("Button clicked! Current form values:", values)
-        axios.post("http:// https://false-unshaved-lilac.ngrok-free.dev/auth/adminlogin", values, {withCredentials: true})
+        axios.post("https://false-unshaved-lilac.ngrok-free.dev/auth/adminlogin", values, {withCredentials: true})
         .then(result => {
             if(result.data.loginStatus){
                  navigate("/dashboard")
